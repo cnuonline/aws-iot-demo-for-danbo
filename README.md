@@ -1,11 +1,16 @@
 AWS IoT Demo for Danbo
 ======================
 
-![Animated Gif](animated.gif)
 Demo for a cloud-connected Danbo controlled via the AWS IoT service.
 
-Below is the architecture diagram for this project:
-![Architecture Diagram](architecture.jpg)
-Architecture Diagram
+<p align="center">
+  <img src="animated.gif" alt="AWS IoT Demo for Danbo"/>
+</p>
 
+## Architecture
+<p align="center">
+  <img src="architecture.jpg" alt="Architecture Diagram"/>
+</p>
+
+## Instructions
 For detailed instructions, please follow the [Hackster.io tutorial](https://hackster.io/) (tutorial link to be published soon)
