@@ -1,0 +1,427 @@
+/*!
+ * Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"). 
+ * You may not use this file except in compliance with the License. 
+ * A copy of the License is located at
+ *
+ * 	 http://aws.amazon.com/apache2.0/
+ *
+ * or in the "license" file accompanying this file. 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+ * OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions 
+ * and limitations under the License.
+*/
+.btn3d {
+    transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    -moz-outline-style:none;
+    border:0px;
+    margin-right:0px;
+    margin-top:-10px;
+}
+.btn3d:focus {
+    outline:medium none;
+    -moz-outline-style:none;
+}
+.btn3d:active {
+    top:9px;
+}
+.btn-default {
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#fff;
+}
+.btn-primary {
+    box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#428bca;
+}
+ .btn-success {
+    box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#5cb85c;
+}
+ .btn-info {
+    box-shadow:0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#5bc0de;
+}
+.btn-warning {
+    box-shadow:0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #eea236, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#f0ad4e;
+}
+.btn-danger {
+    box-shadow:0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #C24032, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#c63702;
+}
+
+.table tbody>tr>td{
+    vertical-align: middle;
+}
+
+.pulse-green {
+  margin:0px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: rgba(0,220,0, 0.8);
+  box-shadow: 0 220 0 rgba(0,220,0, 0.8);
+  animation: pulse 1s infinite;
+}
+
+.pulse-red {
+  margin:0px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: rgba(220,0,0, 0.8);
+  box-shadow: 220 0 0 rgba(220,0,0, 0.8);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,220,0, 0.8);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(0,220,0, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0,220,0, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0,220,0, 0.8);
+    box-shadow: 0 0 0 0 rgba(0,220,0, 0.8);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(0,220,0, 0);
+      box-shadow: 0 0 0 10px rgba(0,220,0, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0,220,0, 0);
+      box-shadow: 0 0 0 0 rgba(0,220,0, 0);
+  }
+}
+
+.col-center {
+   float: none;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.modal-dialog-center {
+    margin-top: -10%;
+}
+
+#addItemModal .modal-dialog  {width:77%;}
+#editItemModal .modal-dialog  {width:77%;}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.btn-file-edit {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file-edit input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.input-group-addon {
+    min-width:150px;// if you want width please write here //
+    text-align:left;
+}
+
+
+.form-control.categoryname {
+    width:415px;// if you want width please write here //
+    text-align:left;
+}
+
+.form-control.itemname {
+    width:752px;// if you want width please write here //
+    text-align:left;
+}
+
+.form-control.photo {
+    width:683px;// if you want width please write here //
+    text-align:left;
+}
+
+.form-control.price {
+    width:250px;// if you want width please write here //
+    text-align:left;
+}
+
+.form-control.model {
+    width:352px;// if you want width please write here //
+    text-align:left;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+#map-canvas {
+	display: inline-block;
+	height: 300px;
+	width: 600px;
+	margin: 0px;
+	padding: 0px;
+	text-align:center
+}
+
+.list-group-item2 {
+  margin-right: 20px;
+}
+
+.list-group-item2.active,
+.list-group-item2.active:hover,
+.list-group-item2.active:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.btn2 {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-default2.active,
+.open > .dropdown-toggle.btn-default2 {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #adadad;
+}
+
+.pagination {
+  display: block;
+  padding-left: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.table > thead > tr > th {
+  vertical-align: middle;
+}
+
+.pager {
+	padding-left: 0;	
+	margin: 5px 0;
+	text-align: center;
+	list-style: none;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.container .jumbotron {
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+span {
+  display: inline-block;
+  line-height: normal;      
+}
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    .carousel {
+      margin-bottom: 0px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 0%;
+      margin-top: 0;
+      font-size: 0px;
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 160px;
+    }
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 1100px;
+      margin:0 auto;
+      text-align:center;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #000000;
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+.container {
+     padding-right: 10; /*15px in bootstrap.css*/
+     padding-left: 10;  /*idem*/
+     margin-right: auto;
+     margin-left: auto;
+}
+
+/* custom inclusion of right, left and below tabs */
+
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+.modal-dialog {
+  padding-top: 15%;
+}
+
