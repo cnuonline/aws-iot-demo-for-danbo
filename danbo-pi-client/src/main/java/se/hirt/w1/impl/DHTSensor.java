@@ -98,7 +98,7 @@ public class DHTSensor {
 		String result = "";
 		try {
 			Process p = Runtime.getRuntime().exec(
-					String.format("sudo python /home/pi/Adafruit_Python_DHT/examples/AdafruitDHT.py %s %d", type.getCode(), gpioPin));
+					String.format("sudo python /home/pi/adafruit_dht/Adafruit_Python_DHT-master/examples/AdafruitDHT.py %s %d", type.getCode(), gpioPin));
 			BufferedReader in = new BufferedReader(new InputStreamReader(
 					p.getInputStream()));
 			String line = null;
