@@ -31,7 +31,7 @@ var options = {
   port: 8883
 };
 
-app.use(express.static('<PATH_TO_SRC>/danbothing-dashboard/WebContent/ (i.e /Users/silfabio/aws-iot-demo-for-danbo/danbothing-dashboard/WebContent/'));
+app.use(express.static('<PATH_TO_SRC>/danbo-dashboard/WebContent/ (i.e /Users/silfabio/aws-iot-demo-for-danbo/danbo-dashboard/WebContent/'));
 
 var client = mqtt.connect('mqtts://<YOUR_AWS_IOT_ENDPOINT_ID> (i.e. mqtts://XXXXXXXXXXXXX.iot.us-east-1.amazonaws.com)', options);
 
